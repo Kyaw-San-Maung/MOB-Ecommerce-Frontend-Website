@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Ecormmerce Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .site-footer
+{
+  background-color:#f8f9f3;
+  padding:60px 0 20px;
+  font-size:20px;
+  line-height:24px;
+  color:#040404;
+  margin-top: 45px;
+}
+
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:40px;
+  height:40px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:999px)
+{
+  #navbar
+  {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: white;
+    box-shadow: 0 40px 60px black;
+    padding: 80px 0 0 10px;
+    transition: 0.45s;
+  }
+
+  #navbar.active{
+    right: 0px;
+  }
+
+  #navbar li{
+    margin-bottom: 25px;
+  }
+
+  #mobile{
+    display: flex;
+    align-items: center;
+  }
+
+  #mobile i{
+    color: black;
+    font-size: 30px;
+    padding-left: 25px;
+  }
+
+  #close{
+    display: initial;
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    font-size: 30px;
+    color: black;
+  }
+
+  #lg-bag{
+
+    display: none;
+  }
+}
+
+.footer-about{
+   text-align: center;
+   margin-bottom: 120px;
+}
+    </style>
+</head>
+<body>
+    <section id="header">
+        <a href="index.html"><img src="image/logo.png" id="limg"></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a class = "active" href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id= "lg-bag"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <a href="#" id="close"><i class="fas fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+
+        </div>
+    </section>
+
+    <section id="pro-detail" class="section-p1">
+        <div class="single-pro-image">
+            <img src="image/product/p8.jpg" width="100%" id="MainImg" alt="">
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="image/product/p8.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="image/product/pp23.png" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="image/product/pp24.png" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="image/product/pp25.jpg" width="100%" class="small-img" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="single-pro-detail">
+            <h6>The North Face Sweatshirt</h6>
+            <h3><strong>Men's Fashion Sweatshirt</strong></h3>
+            <h1><strong>$599.9</strong></h1>
+            <select >
+                <option >Select Size</option>
+                <option >XL</option>
+                <option >XXL</option>
+                <option >Large</option>
+                <option >Small</option>
+            </select>
+            <input type="number" value="1">
+            <button class="normal">Add To Cart</button>
+            <h2><strong>Product details</strong></h2>
+            <span>第4弾｜HYKE×THE NORTH FACE のコラボ全20型を全部見せ！2019FW秋冬 メンズ・ウィメンズ ラスト</span>
+        </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h1 class="pp">Features Product</h1><br>
+        <p>Popular Brand Clothing Collection New Mordern Design For Men</p><br><br>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="image/product/p10.jpg" alt="clothes">
+                <div class="des">
+                    <span>Carhartt</span>
+                    <h1>Carhartt black jacket </h1>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3>$199.9</h3>
+                </div>
+                <div class="cart">
+                    <a href="#"><i class="fa-solid fa-cart-shopping jj"></i></a>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="image/product/p11.png" alt="clothes">
+                <div class="des">
+                    <br><br><br><br><br>
+                    <span>Stussy</span>
+                    <h1>Stussy NYLON FOLSOM JACKET</h1>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3>$599.9</h3>
+                </div>
+                <div class="cart">
+                    <a href="#"><i class="fa-solid fa-cart-shopping jj"></i></a>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="image/product/p12.jpg" alt="clothes">
+                <div class="des">
+                    <br><br><br><br><br>
+                    <span>Essentials</span>
+                    <h1>Fear of God Essentials Desert Taupe T-Shirt </h1>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3>$259.9</h3>
+                </div>
+                <div class="cart">
+                    <a href="#"><i class="fa-solid fa-cart-shopping jj"></i></a>
+                </div>
+            </div>
+            &nbsp;&nbsp;
+            <div class="pro">
+                <img src="image/product/p13.png" alt="clothes">
+                <div class="des">
+                    <span>Stussy</span>
+                    <h1>Stüssy Flames Tee Midnight</h1>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3>$659.9</h3>
+                </div>
+                <div class="cart">
+                    <a href="#"><i class="fa-solid fa-cart-shopping jj"></i></a>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="image/product/p14.png" alt="clothes">
+                <div class="des">
+                    <br><br><br><br><br>
+                    <span>Bape</span>
+                    <h1>Line 1st Camo Shark tee</h1>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>$200</h3>
+                </div>
+                <div class="cart">
+                    <a href="#"><i class="fa-solid fa-cart-shopping jj"></i></a>
+                </div>
+            </div>
+            <div class="pro">
+                <img src="image/product/p15.png" alt="clothes">
+                <div class="des">
+                    <br><br><br><br><br><br><br><br>
+                    <span>Stussy</span>
+                    <h1>OVERDYED STOCK LOGO ZIP HOODIE</h1>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3>$759.9</h3>
+                </div>
+                <div class="cart">
+                    <a href="#"><i class="fa-solid fa-cart-shopping jj"></i></a>
+                </div>
+            </div>
+            &nbsp;&nbsp;
+           
+    </section>
+
+    <section id="newletter" class="section-p1 section-m1">
+
+        <div class="newstext">
+           <h4>Sign Up For Newletter</h4> 
+           <p>Get E-mail updates about our latest shop and <span>special offer</span> </p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email addresss">
+            <button class="normal">Sign Up</button>
+        </div>
+
+    </section>
+    
+    <!-- <footer class="section-p1">
+        <div class="col">
+            <img src="image/logo.png" alt="" id="limg">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> 735-A, Thit Sar Road, Street 7 , Hlaing Thar Yar </p>
+            <p><strong>Phone:</strong> +95 9788234477 , +95 9799105258 </p>
+            <p><strong>Hour:</strong> 10:00 - 18:00, Mon - Sat </p>
+
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+
+            <div class="uu">
+                <h4>About</h4>
+                <a href="#">About us</a>
+                <a href="#">Delivery Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Contact Us</a>
+            </div>
+
+            <div>
+                <h4>My Account</h4>
+                <a href="#">Sign In</a>
+                <a href="#">View Cart</a>
+                <a href="#">My Wishlist</a>
+                <a href="#">Track My Order</a>
+                <a href="#">Help</a>
+            </div>
+
+            <div class="col install">
+                <h4>Install app</h4>
+                <p>From App Store or Google Play</p>
+
+                <div class="row">
+                    <img src="image/pay/app.png" alt="" style="width: 90px; height: 40px;">
+                    <img src="image/pay/play.png" alt="" style="width: 90px; height: 40px;">
+                </div>
+                <p>Secured Payment Gateways</p>
+                <img src="image/pay/vpay.png" alt="" style="width: 100px; height: 60px;">
+                
+            </div>
+
+            <div class="copyright">
+                <p>@ 2023, Creating this website by Kyaw San Maung - Using HTML CSS Ecormmerce Tamplate</p>
+            </div>
+        </div>
+    </footer> -->
+
+    <footer class="site-footer">
+
+        <div class="footer-about">
+            <img src="image/logo.png" alt="" id="limg">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> 735-A, Thit Sar Road, Street 7 , Hlaing Thar Yar </p>
+            <p><strong>Phone:</strong> +95 9788234477 , +95 9799105258 </p>
+            <p><strong>Hour:</strong> 10:00 - 18:00, Mon - Sat </p>
+        </div>
+     
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <p class="copyright-text">This website is made by Queen (Htet Shwe Yee Win).
+              </p>
+            </div>
+
+            <div class="col-md-6">
+           
+              <ul class="social-icons">
+              <span class="copyright-text">Social Media of MOB:
+              </span>
+              &nbsp;&nbsp;&nbsp;
+                <li><a href="https://www.facebook.com/index.php" class="fa fa-facebook facebook"></a></li>
+                <li><a href="https://twitter.com/" class="fa fa-twitter twitter"></a></li>
+                <li><a href="https://www.linkedin.com/feed/" class="fa fa-linkedin linkedin"></a></li>
+                <li><a href="https://www.instagram.com/" class="fa fa-instagram dribbble"></a></li>   
+              </ul>
+            </div>
+
+            </div>
+            
+
+            
+        </div>
+  </footer>
+
+  <script>
+    var mainImage = document.getElementById('MainImg');
+    var smallimage = document.getElementsByClassName('small-img');
+
+    smallimage[0].onclick = function(){
+        mainImage.src = smallimage[0].src;
+    }
+
+    smallimage[1].onclick = function(){
+        mainImage.src = smallimage[1].src;
+    }
+
+    smallimage[2].onclick = function(){
+        mainImage.src = smallimage[2].src;
+    }
+
+    smallimage[3].onclick = function(){
+        mainImage.src = smallimage[3].src;
+    }
+  </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
